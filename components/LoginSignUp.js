@@ -69,7 +69,7 @@ const LoginSignUp = ({ setModelOpen }) => {
                         <div className='text-lg -mt-[2px]' onClick={() => setModelOpen(false)}>x</div>
                     </div>
                     <div className='flex flex-col gap-1 items-center'>
-                        <div className='font-bold text-2xl bound'>Join BetterInvest</div>
+                        <div className='font-bold text-2xl bound'>Join CineWealth</div>
                         <div className='font-bold text-xl text-[#aaa]'>Grow your wealth</div>
                     </div>
                     <div className='w-full h-[50px] bg-[#222] rounded-md flex items-center px-4'>

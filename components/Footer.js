@@ -17,7 +17,7 @@ const Footer = () => {
                 <div className="py-5 md:p-5 text-[#aaa]  flex flex-col gap-3 mt-8">
                     &#169; CineWealth. All rights reserved. Built in India
                 </div>
-                <div className='text-[#aaa] flex gap-[80px] justify-start md:justify-center items-center md:items-start flex-wrap mt-2 '>
+                <div className='text-[#aaa] flex gap-[80px] justify-start md:justify-center items-start md:items-start flex-wrap mt-2 '>
                     <div className='text-md font-extrabold flex flex-col gap-3 cursor-pointer'>
                         <div className='mb-5'>FOR INVESTORS</div>
                         <Link href={"#ff"} className='text-white font-bold hover:underline'>Home</Link>

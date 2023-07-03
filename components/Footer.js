@@ -31,7 +31,6 @@ const Footer = () => {
                         <div className='mb-5'>COMPANY</div>
                         <div className='text-white font-bold hover:underline'>About Us</div>
                         <div className='text-white font-bold hover:underline'>Contact us</div>
-                        <div className='px-2 text-[14px] rounded-md bg-gradient-to-l from-[#02FFF8] to-[#03FFA4] font-bold border-2 text-black border-[#05FFF8] btnshd cursor-pointer hover:underline'>We are hiring</div>
                     </div>
                     <div className='text-md font-extrabold flex flex-col gap-3 cursor-pointer'>
                         <div className='mb-5'>LEGAL</div>

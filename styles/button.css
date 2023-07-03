@@ -1,0 +1,7 @@
+.btnshd {
+    transition: all 0.3s ease-in-out;
+}
+
+.btnshd:hover {
+    box-shadow: 0 0 20px 3px rgba(255, 255, 255, 0.55);
+}

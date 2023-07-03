@@ -37,47 +37,47 @@ function Asset() {
                             <h1 className="text-[#fff] text-[1rem]">receive returns directly from leading OTT   </h1>
                         </div>
 
-                        <div className="bg-[#fff] md:hidden block mx-5 rounded-xl shadow-md p-2">
+                        <div className="bg-[#fff] md:hidden block  rounded-xl shadow-md p-2 w-[90vw]">
                             <CalculateCard />
                         </div>
 
                         <div className="p-5 grid grid-cols-2 border-[2px] border-blue-500 rounded-md mt-4">
-                            <div className="text-xl text-center">
+                            <div className="text-[18px] md:text-xl text-center">
                                 <p className="text-[#fff] font-bold">18 %</p>
                                 <p className="text-[#fff]">pre-tax return</p>
                             </div>
-                            <div className="text-xl text-center">
+                            <div className="text-[18px] md:text-xl text-center">
                                 <p className="text-[#fff] font-bold">10 to 13</p>
                                 <p className="text-[#fff]">months</p>
                             </div>
                         </div>
 
-                        <div className="py-3">
-                            <h1 className="text-[#fff] text-[2rem] bound py-2">Highlights</h1>
+                        <div className="py-3 mt-2 md:mt-0">
+                            <h1 className="text-[#fff] text-[1.8rem] md:text-[2rem] bound py-2">Highlights</h1>
                             <div className="grid grid-cols-2 gap-2">
-                                <div className="h-auto md:h-[150px] rounded-r-2xl border-l-4 border-blue-500 p-5 bg-[#ffffff] shadow-xl">
-                                    <p className=" text-[1.5rem]">Short-term high returns</p>
+                                <div className="h-auto lg:h-[150px] rounded-r-2xl border-l-4 border-blue-500 p-5 bg-[#ffffff] shadow-xl">
+                                    <p className="text-[1.4rem] md:text-[1.5rem]">Short-term high returns</p>
                                     <p className="text-[#464646] text-[1rem]">Fixed returns not affected by market</p>
                                 </div>
-                                <div className="h-auto md:h-[150px] rounded-r-2xl border-l-4 border-blue-500 p-5 bg-[#ffffff] shadow-xl">
-                                    <p className=" text-[1.5rem]">Non - Market Linked</p>
+                                <div className="h-auto lg:h-[150px] rounded-r-2xl border-l-4 border-blue-500 p-5 bg-[#ffffff] shadow-xl">
+                                    <p className=" text-[1.4rem] md:text-[1.5rem]">Non - Market Linked</p>
                                     <p className="text-[#464646] text-[1rem]">No fluctuations based on market trends</p>
                                 </div>
-                                <div className="h-auto md:h-[150px]  rounded-r-2xl border-l-4 border-blue-500 p-5 bg-[#ffffff] shadow-xl">
-                                    <p className=" text-[1.5rem]">Notable buyer</p>
+                                <div className="h-auto lg:h-[150px]  rounded-r-2xl border-l-4 border-blue-500 p-5 bg-[#ffffff] shadow-xl">
+                                    <p className=" text-[1.3rem] md:text-[1.5rem]">Notable buyer</p>
                                     <p className="text-[#464646] text-[1rem]">Receive returns directly from a leading buyer</p>
                                 </div>
                             </div>
                             <div>
                                 <ul class="list-disc list-inside py-5 flex flex-col gap-5">
                                     <li className="text-[#fff] border-l-2 border-blue-400 pl-2 text-lg md:text-xl">BetterInvest and its partners have a collective experience of 70+ years in South Indian film industry</li>
-                                    <li className="text-[#fff] border-l-2 border-blue-400 pl-2 text-xl">The opportunity is vetted and due diligence is performed by a team of experts</li>
-                                    <li className="text-[#fff] border-l-2 border-blue-400 pl-2 text-xl">Opportunity is structured to accommodate an Interest coverage of up to 3 months in case of any delay beyond the initial tenure of 10 months</li>
+                                    <li className="text-[#fff] border-l-2 border-blue-400 pl-2 text-lg md:text-xl">The opportunity is vetted and due diligence is performed by a team of experts</li>
+                                    <li className="text-[#fff] border-l-2 border-blue-400 pl-2 text-lg md:text-xl">Opportunity is structured to accommodate an Interest coverage of up to 3 months in case of any delay beyond the initial tenure of 10 months</li>
                                 </ul>
                             </div>
                         </div>
                     </div>
-                    <div className="hidden md:block md:w-1/2 bg-[#ffffff] mx-5 rounded-xl mt-32 shadow-md">
+                    <div className="hidden md:block md:w-1/2 bg-[#ffffff] mx-0 md:mx-5 rounded-xl mt-32 shadow-md p-[4px] lg:p-[8px]">
                         <CalculateCard />
                     </div>
                 </div>
@@ -92,26 +92,25 @@ function CalculateCard() {
 
     return (
         <>
-            <div className="flex justify-evenly items-center text-[3rem]">
-                <button className="border-2 border-blue-500 rounded-full px-2  text-2xl font-bold " onClick={() => setAmount(e => e == 1 ? 1 : e - 1)}>-</button>
-                <p>{"₹"}{amt}{",00,000"}</p>
-                <button className="border-2 border-blue-500 rounded-full px-2  text-2xl font-bold " onClick={() => setAmount(e => e + 1)}>+</button>
+            <div className="flex justify-evenly items-center">
+                <button className="border-2 border-blue-500 rounded-full px-2 text-lg lg:text-2xl font-bold " onClick={() => setAmount(e => e == 1 ? 1 : e - 1)}>-</button>
+                <p className="text-[36px] lg:text-[48px]">{"₹"}{amt}{",00,000"}</p>
+                <button className="border-2 border-blue-500 rounded-full px-2 text-lg lg:text-2xl font-bold " onClick={() => setAmount(e => e + 1)}>+</button>
             </div>
 
             <div className="mx-5 flex justify-between items-center">
-                <p className="text-xl text-[#464646]">Gross returns</p>
-                <p className="text-xl font-bold">{"18%"}</p>
+                <p className="text-lg lg:text-xl text-[#464646]">Gross returns</p>
+                <p className="text-lg lg:text-xl font-bold">{"18%"}</p>
             </div>
             <div className="mx-5 flex justify-between items-center">
-                <p className="text-xl text-[#464646]">pre-tax returns</p>
-                <p className="text-xl font-bold">{"₹118487"}</p>
+                <p className="text-lg lg:text-xl text-[#464646]">pre-tax returns</p>
+                <p className="text-lg lg:text-xl font-bold">{"₹118487"}</p>
             </div>
             <div className="mx-5 flex justify-between items-center bg-blue-300 tetx-white my-5 p-2  rounded-lg">
-                <p className="text-xl ">Expected returns </p>
-                <p className="text-xl font-bold">{"₹118487"}</p>
+                <p className="text-lg lg:text-xl ">Expected returns </p>
+                <p className="text-lg lg:text-xl font-bold">{"₹118487"}</p>
             </div>
-            <div>
-            </div>
+
         </>
     )
 }

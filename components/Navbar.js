@@ -7,6 +7,7 @@ import supabase from '@/config/supabaseClient';
 import Logo from "./../public/Cine.svg"
 
 
+
 const Navbar = () => {
     const [modelOpen, setModelOpen] = useState(false);
     useEffect(() => console.log(modelOpen), [modelOpen]);
@@ -29,7 +30,7 @@ const Navbar = () => {
                         {/* <img src="https://d1muf25xaso8hp.cloudfront.net/https%3A%2F%2Fecb1278b46458a7815b3e71c0488b5a6.cdn.bubble.io%2Ff1636184695667x802640047404033800%2Foie_lqQgz0LCLzXi.png?w=128&h=88&auto=compress&fit=crop&dpr=1.25" alt="error" /> */}
                         <Logo/>
                     </div>
-                    <div className="flex gap-3 md:gap-10 text-md justify-center items-center">
+                    <div className="hidden sm:flex gap-3 md:gap-10 text-md justify-center items-center">
                         <Link href={"#ff"} className='text-[#fff] text-xs md:text-lg'>Home</Link>
                         <Link href={"#about"} className='text-xs md:text-lg'>About</Link>
                         <Link href={"#offer"} className='text-xs md:text-lg'>Offerings</Link>

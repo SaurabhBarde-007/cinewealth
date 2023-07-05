@@ -37,7 +37,7 @@ function Asset() {
                             <h1 className="text-[#fff] text-[1rem]">receive returns directly from leading OTT   </h1>
                         </div>
 
-                        <div className="bg-[#fff] md:hidden block  rounded-xl shadow-md p-2 w-[90vw]">
+                        <div className="bg-[#fff] md:hidden block  rounded-xl shadow-md p-2 w-[90vw] my-7">
                             <CalculateCard />
                         </div>
 

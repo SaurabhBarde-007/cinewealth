@@ -19,14 +19,14 @@ useEffect(() => {
 
 return (
   <>
-    {loading ? (
+    {/* {loading ? (
       <LoadingScreen />
-    ) : (
+    ) : ( */}
       <>
         <Component {...pageProps} />
         <Toaster />
       </>
-    )}
+    {/* )} */}
   </>
   )
 

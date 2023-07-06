@@ -10,7 +10,7 @@ export default function MainPage() {
     return (
         <>
             <Navbar />
-            <div className="w-[100vw] font-bold h-[100vh] bg-[#1B1B1B]  text-white flex flex-col justify-center items-center  relative z-10 text-center kanit gap-5 md:gap-7 px-[10px] mt-[50px]">
+            <div id="ff" className="w-[100vw] font-bold h-[100vh] bg-[#1B1B1B]  text-white flex flex-col justify-center items-center  relative z-10 text-center kanit gap-5 md:gap-7 px-[10px] mt-[50px]">
                 <h1 className="text-[24px] sm:text-[2.2rem] md:text-[2.8rem] lg:text-[3.5rem]">Supercharge Your Investments</h1>
                 <h1 className="text-[36px] sm:text-[2.7rem] md:text-[3.3rem] lg:text-[4rem] ">Dive into <span className="text-[#8E41F7] font-extrabold bound"> On-Chain</span> Debt Assets</h1>
                 <p className="text-md text-[#bbb] text-[18px] md:text-[1.8rem]">Earn upto 18% by Fueling the Future of Movies</p>
